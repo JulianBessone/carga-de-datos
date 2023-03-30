@@ -1,18 +1,17 @@
-FROM node:18.8.0-alpine AS builder
 
-RUN mkdir -p /app
-WORKDIR /app
 
-COPY package.json  .
-COPY yarn.lock .
+FROM node:18.8-alpine as base
 
-RUN apk add git
+FROM base as builder
 
-RUN yarn install
+WORKDIR /home/node/app
+COPY package*.json ./
 
 COPY . .
+RUN npm install
+RUN npm run build
 
-RUN yarn build
 
 EXPOSE 3000
-CMD [ "yarn", "run", "serve" ]
+
+CMD ["node", "dist/server.js"]
