@@ -15,10 +15,10 @@
     "generate:graphQLSchema": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload generate:graphQLSchema"
   },
   "dependencies": {
-    "payload": "^1.1.5",
+    "payload": "^1.6.28",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "graphql": "^15.4.0"
+    "graphql": "^16.6.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.9",
