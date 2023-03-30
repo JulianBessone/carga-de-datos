@@ -17,7 +17,7 @@
   "dependencies": {
     "payload": "^1.6.28",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.1"
   },
   "resolutions": {
     "graphql": "^14.7.0 || ^15.3.0"
