@@ -26,6 +26,7 @@ const Media: CollectionConfig = {
     adminThumbnail: 'thumbnail',
     mimeTypes: ['image/*'],
   },
+  fields: [],
 };
 
 export default Media
